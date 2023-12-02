@@ -67,7 +67,7 @@ int find_numbers(const std::string& line, bool day2)
     return *first_number * 10 + last_number;
 }
 
-std::int64_t part1()
+int64_t part1()
 {
     using namespace std::placeholders;
     const auto input = read_file(INPUT_DIR "day01.txt");
@@ -76,7 +76,7 @@ std::int64_t part1()
     return std::accumulate(result.begin(), result.end(), 0);
 }
 
-std::int64_t part2()
+int64_t part2()
 {
     using namespace std::placeholders;
     const auto input = read_file(INPUT_DIR "day01.txt");

@@ -16,7 +16,6 @@ endif()
 
 # Generate compile_commands.json to make it easier to work with clang based tools
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-
 # Enhance error reporting and compiler messages
 if(CMAKE_CXX_COMPILER_ID MATCHES ".*Clang")
     if(WIN32)
