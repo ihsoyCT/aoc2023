@@ -37,3 +37,4 @@ add_compile_definitions(INPUT_DIR=${INPUT_DIR})
 
 add_subdirectory(day01)
 add_subdirectory(day02)
+add_subdirectory(day03)
