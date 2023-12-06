@@ -65,15 +65,15 @@ auto parse_input(const std::vector<std::string>& input)
 auto calculate_winning_race_times(const race& race)
 {
     int64_t current_time{ 0 };
-    std::vector<int64_t> possible_times_race;
+    int64_t winning_count{};
     while (current_time < race.time) {
         int64_t time_left = race.time - current_time;
         if (time_left * current_time > race.distance) {
-            possible_times_race.emplace_back(current_time);
+            ++winning_count;
         }
         ++current_time;
     }
-    return possible_times_race;
+    return winning_count;
 }
 
 auto solution(const std::vector<std::string>& input)
@@ -83,17 +83,17 @@ auto solution(const std::vector<std::string>& input)
     auto& races_part1 = races.first;
     auto& race_part2 = races.second;
 
-    std::vector<std::vector<int64_t>> possible_times;
+    std::vector<int64_t> possible_times;
     possible_times.reserve(races_part1.size());
     for (const auto& race : races_part1) {
         possible_times.push_back(calculate_winning_race_times(race));
     }
     auto part1 =
         std::accumulate(possible_times.begin(), possible_times.end(), 1LL, [](int64_t sum, const auto& race_times) {
-            return sum * std::ssize(race_times);
+            return sum * race_times;
         });
 
-    int64_t part2 = std::ssize(calculate_winning_race_times(race_part2));
+    int64_t part2 = calculate_winning_race_times(race_part2);
     return std::make_pair(part1, part2);
 }
 
@@ -101,6 +101,8 @@ auto solution(const std::vector<std::string>& input)
 
 int main()
 {
+    using time_scale = std::chrono::milliseconds;
+
     auto start = std::chrono::high_resolution_clock::now();
     const auto input = day06::read_file(INPUT_DIR "day06.txt");
     auto io_time = std::chrono::high_resolution_clock::now();
@@ -111,8 +113,8 @@ int main()
     std::cout << std::format("Day 05 Part 1: {}\n", part1);
     std::cout << std::format("Day 05 Part 2: {}\n", part2);
 
-    auto io_ms = std::chrono::duration_cast<std::chrono::seconds>(io_time - start);
-    auto execution_ms = std::chrono::duration_cast<std::chrono::seconds>(execution_time - io_time);
-    auto total_ms = std::chrono::duration_cast<std::chrono::seconds>(execution_time - start);
+    auto io_ms = std::chrono::duration_cast<time_scale>(io_time - start);
+    auto execution_ms = std::chrono::duration_cast<time_scale>(execution_time - io_time);
+    auto total_ms = std::chrono::duration_cast<time_scale>(execution_time - start);
     std::cout << std::format("IO: {}, Execution: {}, Total: {}\n", io_ms, execution_ms, total_ms);
 }

@@ -1,67 +1,67 @@
 [
 {
-  "directory": "/home/ihsoy/adventofcode/build/Debug",
-  "command": "/usr/bin/clang++-17 -DSCN_HEADER_ONLY=0 -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/include -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/deps/fast_float/single_include  -stdlib=libc++ -fexperimental-library -g -std=c++23 -fcolor-diagnostics @_deps/scn-build/CMakeFiles/scn.dir/src/vscan.cpp.o.modmap -o _deps/scn-build/CMakeFiles/scn.dir/src/vscan.cpp.o -c /home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/vscan.cpp",
+  "directory": "/home/ihsoy/adventofcode/build/Release",
+  "command": "/usr/bin/clang++-17 -DSCN_HEADER_ONLY=0 -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/include -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/deps/fast_float/single_include  -stdlib=libc++ -fexperimental-library -O3 -DNDEBUG -std=c++23 -fcolor-diagnostics @_deps/scn-build/CMakeFiles/scn.dir/src/vscan.cpp.o.modmap -o _deps/scn-build/CMakeFiles/scn.dir/src/vscan.cpp.o -c /home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/vscan.cpp",
   "file": "/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/vscan.cpp",
   "output": "_deps/scn-build/CMakeFiles/scn.dir/src/vscan.cpp.o"
 },
 {
-  "directory": "/home/ihsoy/adventofcode/build/Debug",
-  "command": "/usr/bin/clang++-17 -DSCN_HEADER_ONLY=0 -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/include -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/deps/fast_float/single_include  -stdlib=libc++ -fexperimental-library -g -std=c++23 -fcolor-diagnostics @_deps/scn-build/CMakeFiles/scn.dir/src/locale.cpp.o.modmap -o _deps/scn-build/CMakeFiles/scn.dir/src/locale.cpp.o -c /home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/locale.cpp",
+  "directory": "/home/ihsoy/adventofcode/build/Release",
+  "command": "/usr/bin/clang++-17 -DSCN_HEADER_ONLY=0 -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/include -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/deps/fast_float/single_include  -stdlib=libc++ -fexperimental-library -O3 -DNDEBUG -std=c++23 -fcolor-diagnostics @_deps/scn-build/CMakeFiles/scn.dir/src/locale.cpp.o.modmap -o _deps/scn-build/CMakeFiles/scn.dir/src/locale.cpp.o -c /home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/locale.cpp",
   "file": "/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/locale.cpp",
   "output": "_deps/scn-build/CMakeFiles/scn.dir/src/locale.cpp.o"
 },
 {
-  "directory": "/home/ihsoy/adventofcode/build/Debug",
-  "command": "/usr/bin/clang++-17 -DSCN_HEADER_ONLY=0 -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/include -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/deps/fast_float/single_include  -stdlib=libc++ -fexperimental-library -g -std=c++23 -fcolor-diagnostics @_deps/scn-build/CMakeFiles/scn.dir/src/reader_float.cpp.o.modmap -o _deps/scn-build/CMakeFiles/scn.dir/src/reader_float.cpp.o -c /home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/reader_float.cpp",
+  "directory": "/home/ihsoy/adventofcode/build/Release",
+  "command": "/usr/bin/clang++-17 -DSCN_HEADER_ONLY=0 -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/include -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/deps/fast_float/single_include  -stdlib=libc++ -fexperimental-library -O3 -DNDEBUG -std=c++23 -fcolor-diagnostics @_deps/scn-build/CMakeFiles/scn.dir/src/reader_float.cpp.o.modmap -o _deps/scn-build/CMakeFiles/scn.dir/src/reader_float.cpp.o -c /home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/reader_float.cpp",
   "file": "/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/reader_float.cpp",
   "output": "_deps/scn-build/CMakeFiles/scn.dir/src/reader_float.cpp.o"
 },
 {
-  "directory": "/home/ihsoy/adventofcode/build/Debug",
-  "command": "/usr/bin/clang++-17 -DSCN_HEADER_ONLY=0 -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/include -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/deps/fast_float/single_include  -stdlib=libc++ -fexperimental-library -g -std=c++23 -fcolor-diagnostics @_deps/scn-build/CMakeFiles/scn.dir/src/reader_int.cpp.o.modmap -o _deps/scn-build/CMakeFiles/scn.dir/src/reader_int.cpp.o -c /home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/reader_int.cpp",
+  "directory": "/home/ihsoy/adventofcode/build/Release",
+  "command": "/usr/bin/clang++-17 -DSCN_HEADER_ONLY=0 -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/include -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/deps/fast_float/single_include  -stdlib=libc++ -fexperimental-library -O3 -DNDEBUG -std=c++23 -fcolor-diagnostics @_deps/scn-build/CMakeFiles/scn.dir/src/reader_int.cpp.o.modmap -o _deps/scn-build/CMakeFiles/scn.dir/src/reader_int.cpp.o -c /home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/reader_int.cpp",
   "file": "/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/reader_int.cpp",
   "output": "_deps/scn-build/CMakeFiles/scn.dir/src/reader_int.cpp.o"
 },
 {
-  "directory": "/home/ihsoy/adventofcode/build/Debug",
-  "command": "/usr/bin/clang++-17 -DSCN_HEADER_ONLY=0 -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/include -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/deps/fast_float/single_include  -stdlib=libc++ -fexperimental-library -g -std=c++23 -fcolor-diagnostics @_deps/scn-build/CMakeFiles/scn.dir/src/file.cpp.o.modmap -o _deps/scn-build/CMakeFiles/scn.dir/src/file.cpp.o -c /home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/file.cpp",
+  "directory": "/home/ihsoy/adventofcode/build/Release",
+  "command": "/usr/bin/clang++-17 -DSCN_HEADER_ONLY=0 -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/include -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/deps/fast_float/single_include  -stdlib=libc++ -fexperimental-library -O3 -DNDEBUG -std=c++23 -fcolor-diagnostics @_deps/scn-build/CMakeFiles/scn.dir/src/file.cpp.o.modmap -o _deps/scn-build/CMakeFiles/scn.dir/src/file.cpp.o -c /home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/file.cpp",
   "file": "/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/src/file.cpp",
   "output": "_deps/scn-build/CMakeFiles/scn.dir/src/file.cpp.o"
 },
 {
-  "directory": "/home/ihsoy/adventofcode/build/Debug",
-  "command": "/usr/bin/clang++-17 -DINPUT_DIR=\\\"/home/ihsoy/adventofcode/inputs/\\\"  -stdlib=libc++ -fexperimental-library -g -std=c++23 -fcolor-diagnostics -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Werror @day01/CMakeFiles/day01.dir/main.cpp.o.modmap -o day01/CMakeFiles/day01.dir/main.cpp.o -c /home/ihsoy/adventofcode/day01/main.cpp",
+  "directory": "/home/ihsoy/adventofcode/build/Release",
+  "command": "/usr/bin/clang++-17 -DINPUT_DIR=\\\"/home/ihsoy/adventofcode/inputs/\\\"  -stdlib=libc++ -fexperimental-library -O3 -DNDEBUG -std=c++23 -fcolor-diagnostics -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Werror @day01/CMakeFiles/day01.dir/main.cpp.o.modmap -o day01/CMakeFiles/day01.dir/main.cpp.o -c /home/ihsoy/adventofcode/day01/main.cpp",
   "file": "/home/ihsoy/adventofcode/day01/main.cpp",
   "output": "day01/CMakeFiles/day01.dir/main.cpp.o"
 },
 {
-  "directory": "/home/ihsoy/adventofcode/build/Debug",
-  "command": "/usr/bin/clang++-17 -DINPUT_DIR=\\\"/home/ihsoy/adventofcode/inputs/\\\" -DSCN_HEADER_ONLY=0 -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/include  -stdlib=libc++ -fexperimental-library -g -std=c++23 -fcolor-diagnostics -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Werror @day02/CMakeFiles/day02.dir/main.cpp.o.modmap -o day02/CMakeFiles/day02.dir/main.cpp.o -c /home/ihsoy/adventofcode/day02/main.cpp",
+  "directory": "/home/ihsoy/adventofcode/build/Release",
+  "command": "/usr/bin/clang++-17 -DINPUT_DIR=\\\"/home/ihsoy/adventofcode/inputs/\\\" -DSCN_HEADER_ONLY=0 -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/include  -stdlib=libc++ -fexperimental-library -O3 -DNDEBUG -std=c++23 -fcolor-diagnostics -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Werror @day02/CMakeFiles/day02.dir/main.cpp.o.modmap -o day02/CMakeFiles/day02.dir/main.cpp.o -c /home/ihsoy/adventofcode/day02/main.cpp",
   "file": "/home/ihsoy/adventofcode/day02/main.cpp",
   "output": "day02/CMakeFiles/day02.dir/main.cpp.o"
 },
 {
-  "directory": "/home/ihsoy/adventofcode/build/Debug",
-  "command": "/usr/bin/clang++-17 -DINPUT_DIR=\\\"/home/ihsoy/adventofcode/inputs/\\\"  -stdlib=libc++ -fexperimental-library -g -std=c++23 -fcolor-diagnostics @day03/CMakeFiles/day03.dir/main.cpp.o.modmap -o day03/CMakeFiles/day03.dir/main.cpp.o -c /home/ihsoy/adventofcode/day03/main.cpp",
+  "directory": "/home/ihsoy/adventofcode/build/Release",
+  "command": "/usr/bin/clang++-17 -DINPUT_DIR=\\\"/home/ihsoy/adventofcode/inputs/\\\"  -stdlib=libc++ -fexperimental-library -O3 -DNDEBUG -std=c++23 -fcolor-diagnostics @day03/CMakeFiles/day03.dir/main.cpp.o.modmap -o day03/CMakeFiles/day03.dir/main.cpp.o -c /home/ihsoy/adventofcode/day03/main.cpp",
   "file": "/home/ihsoy/adventofcode/day03/main.cpp",
   "output": "day03/CMakeFiles/day03.dir/main.cpp.o"
 },
 {
-  "directory": "/home/ihsoy/adventofcode/build/Debug",
-  "command": "/usr/bin/clang++-17 -DINPUT_DIR=\\\"/home/ihsoy/adventofcode/inputs/\\\" -DSCN_HEADER_ONLY=0 -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/include  -stdlib=libc++ -fexperimental-library -g -std=c++23 -fcolor-diagnostics -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Werror @day04/CMakeFiles/day04.dir/main.cpp.o.modmap -o day04/CMakeFiles/day04.dir/main.cpp.o -c /home/ihsoy/adventofcode/day04/main.cpp",
+  "directory": "/home/ihsoy/adventofcode/build/Release",
+  "command": "/usr/bin/clang++-17 -DINPUT_DIR=\\\"/home/ihsoy/adventofcode/inputs/\\\" -DSCN_HEADER_ONLY=0 -I/home/ihsoy/adventofcode/.cache/CPM/scn/ee384e4dfeb40efb93d1b2a397a81e8027027f77/include  -stdlib=libc++ -fexperimental-library -O3 -DNDEBUG -std=c++23 -fcolor-diagnostics -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Werror @day04/CMakeFiles/day04.dir/main.cpp.o.modmap -o day04/CMakeFiles/day04.dir/main.cpp.o -c /home/ihsoy/adventofcode/day04/main.cpp",
   "file": "/home/ihsoy/adventofcode/day04/main.cpp",
   "output": "day04/CMakeFiles/day04.dir/main.cpp.o"
 },
 {
-  "directory": "/home/ihsoy/adventofcode/build/Debug",
-  "command": "/usr/bin/clang++-17 -DINPUT_DIR=\\\"/home/ihsoy/adventofcode/inputs/\\\"  -stdlib=libc++ -fexperimental-library -g -std=c++23 -fcolor-diagnostics -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Werror @day05/CMakeFiles/day05.dir/main.cpp.o.modmap -o day05/CMakeFiles/day05.dir/main.cpp.o -c /home/ihsoy/adventofcode/day05/main.cpp",
+  "directory": "/home/ihsoy/adventofcode/build/Release",
+  "command": "/usr/bin/clang++-17 -DINPUT_DIR=\\\"/home/ihsoy/adventofcode/inputs/\\\"  -stdlib=libc++ -fexperimental-library -O3 -DNDEBUG -std=c++23 -fcolor-diagnostics -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Werror @day05/CMakeFiles/day05.dir/main.cpp.o.modmap -o day05/CMakeFiles/day05.dir/main.cpp.o -c /home/ihsoy/adventofcode/day05/main.cpp",
   "file": "/home/ihsoy/adventofcode/day05/main.cpp",
   "output": "day05/CMakeFiles/day05.dir/main.cpp.o"
 },
 {
-  "directory": "/home/ihsoy/adventofcode/build/Debug",
-  "command": "/usr/bin/clang++-17 -DINPUT_DIR=\\\"/home/ihsoy/adventofcode/inputs/\\\"  -stdlib=libc++ -fexperimental-library -g -std=c++23 -fcolor-diagnostics -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Werror @day06/CMakeFiles/day06.dir/main.cpp.o.modmap -o day06/CMakeFiles/day06.dir/main.cpp.o -c /home/ihsoy/adventofcode/day06/main.cpp",
+  "directory": "/home/ihsoy/adventofcode/build/Release",
+  "command": "/usr/bin/clang++-17 -DINPUT_DIR=\\\"/home/ihsoy/adventofcode/inputs/\\\"  -stdlib=libc++ -fexperimental-library -O3 -DNDEBUG -std=c++23 -fcolor-diagnostics -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Werror @day06/CMakeFiles/day06.dir/main.cpp.o.modmap -o day06/CMakeFiles/day06.dir/main.cpp.o -c /home/ihsoy/adventofcode/day06/main.cpp",
   "file": "/home/ihsoy/adventofcode/day06/main.cpp",
   "output": "day06/CMakeFiles/day06.dir/main.cpp.o"
 }
