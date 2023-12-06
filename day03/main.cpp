@@ -104,7 +104,6 @@ int main()
 {
     size_t line_length{};
     const auto input = day03::read_file(INPUT_DIR "day03.txt", line_length);
-
     const auto [part1, part2] = day03::solution(input, line_length);
 
     std::cout << std::format("Day 03 Part 1: {}\n", part1);
