@@ -1,11 +1,12 @@
-#include <boost/unordered/unordered_flat_map.hpp>
+#include <charconv>
 #include <chrono>
+#include <cstdint>
+#include <deque>
 #include <format>
 #include <fstream>
 #include <iostream>
-#include <numeric>
+#include <iterator>
 #include <ranges>
-#include <scn/scn.h>
 #include <utility>
 #include <vector>
 
@@ -21,75 +22,46 @@ auto read_file(const std::string& file_path)
     return output;
 }
 
-using element_t = std::string;
-
-struct node_t {
-    element_t left;
-    element_t right;
-};
-
-auto parse_input(const std::vector<std::string>& input, std::string& instructions) {
-    boost::unordered_flat_map<element_t, node_t> map;
-
-    int skip = 2;
-    for(const auto& line : input) {
-        if(skip > 0) {
-            if(skip == 2) instructions = line;
-            --skip;
-            continue;
-        }
-        element_t element {};
-        node_t node {};
-        (void) scn::scan(line, "{} = ({:3}, {:3})", element, node.left, node.right);
-        map[element] = node;
-    }
-
-    return map;
+std::deque<int64_t> to_deque(auto range)
+{
+    std::deque<int64_t> out;
+    for (int64_t num : range) out.push_back(num);
+    return out;
 }
 
 auto solution(const std::vector<std::string>& input)
 {
-    std::string instructions;    
-    auto map = parse_input(input, instructions);
+    int64_t part1{};
+    int64_t part2{};
 
-    size_t part1{};
-    { // Part 1
-        element_t cursor = "AAA";
-        while(cursor != "ZZZ") {
-            if(instructions[part1 % instructions.size()] == 'R') {
-                cursor = map[cursor].right;
-            } else {
-                cursor = map[cursor].left;
-            }
-            part1++;
+    auto to_number = [](const auto& element) {
+        int64_t value{};
+        std::from_chars(element.data(), element.data() + element.size(), value);
+        return value;
+    };
+
+    for (const auto& line : input) {
+        std::vector<std::deque<int64_t>> lines;
+        lines.push_back(to_deque(line | std::views::split(' ') | std::views::transform(to_number)));
+
+        while (true) {
+            auto check_if_zero = lines.back() | std::views::filter([](auto num) { return num != 0; });
+            if (check_if_zero.begin() == check_if_zero.end()) break;
+
+            auto next_line = to_deque(lines.back() | std::views::slide(2) | std::views::transform([](auto iter) {
+                return *std::next(iter.begin()) - *iter.begin();
+            }));
+            lines.push_back(next_line);
         }
-    }
 
-    // Part2
-    auto starting_points =  std::views::keys(map) | std::views::filter([](auto key) {
-        return static_cast<bool>(key[key.size() - 1] == 'A');
-    });
-
-    std::vector<size_t> counts{};
-    for(const auto& start_node : starting_points) {
-        size_t instruction_cursor{};
-        element_t cursor = start_node;
-        while(static_cast<bool>(cursor[cursor.size() - 1] != 'Z')) {
-            if(instructions[instruction_cursor % instructions.size()] == 'R') {
-                cursor = map[cursor].right;
-            } else {
-                cursor = map[cursor].left;
-            }
-            instruction_cursor++;
+        for (size_t end = lines.size() - 1; end > 0; --end) {
+            lines[end - 1].push_back(lines[end - 1].back() + lines[end].back());
+            lines[end - 1].push_front(lines[end - 1].front() - lines[end].front());
         }
-        counts.push_back(instruction_cursor);
+        part1 += lines[0].back();
+        part2 += lines[0].front();
     }
 
-    size_t part2{1};
-    while(!counts.empty()) {
-        part2 = std::lcm(counts.back(), part2);
-        counts.pop_back();
-    }
     return std::make_pair(part1, part2);
 }
 
@@ -97,17 +69,17 @@ auto solution(const std::vector<std::string>& input)
 
 int main()
 {
-    using time_scale = std::chrono::milliseconds;
+    using time_scale = std::chrono::microseconds;
 
     auto start = std::chrono::high_resolution_clock::now();
-    const auto input = day08::read_file(INPUT_DIR "day08.txt");
+    const auto input = day08::read_file(INPUT_DIR "day09.txt");
     auto io_time = std::chrono::high_resolution_clock::now();
 
     auto [part1, part2] = day08::solution(input);
 
     std::cout << std::format("Day 08 Part 1: {}\n", part1);
     std::cout << std::format("Day 08 Part 2: {}\n", part2);
-    
+
     auto execution_time = std::chrono::high_resolution_clock::now();
 
     auto io_ms = std::chrono::duration_cast<time_scale>(io_time - start);
