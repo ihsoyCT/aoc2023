@@ -1,0 +1,174 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 22  of event 'cycles:u'
+# Event count (approx.): 1484587
+#
+# Children      Self  Command  Shared Object         Symbol                                                   
+# ........  ........  .......  ....................  .........................................................
+#
+  [31m  35.07%[m     0.00%  day06    [unknown]             [.] 0000000000000000
+            |
+            ---0
+               |          
+               |--[31m20.76%[m--_ZNSt3__115basic_streambufIcNS_11char_traitsIcEEED1Ev
+               |          _dl_lookup_symbol_x
+               |          
+                --[31m14.31%[m--do_lookup_x
+
+  [31m  32.43%[m  [31m  32.43%[m  day06    ld-linux-x86-64.so.2  [.] _dl_lookup_symbol_x
+            |          
+            |--[31m20.76%[m--0
+            |          _ZNSt3__115basic_streambufIcNS_11char_traitsIcEEED1Ev
+            |          _dl_lookup_symbol_x
+            |          
+             --[31m11.67%[m--0xfa9c8
+                       0x7f223598a260
+                       _dl_lookup_symbol_x
+
+  [31m  32.05%[m  [31m  32.05%[m  day06    ld-linux-x86-64.so.2  [.] do_lookup_x
+            |          
+            |--[31m17.75%[m--do_lookup_x
+            |          
+             --[31m14.31%[m--0
+                       do_lookup_x
+
+  [31m  20.76%[m     0.00%  day06    libc++.so.1.0         [.] _ZNSt3__115basic_streambufIcNS_11char_traitsIcEEED1Ev
+            |
+            ---_ZNSt3__115basic_streambufIcNS_11char_traitsIcEEED1Ev
+               _dl_lookup_symbol_x
+
+  [31m  19.48%[m     0.00%  day06    ld-linux-x86-64.so.2  [.] _dl_sysdep_start
+            |
+            ---_dl_sysdep_start
+               |          
+                --[31m19.10%[m--dl_main
+                          |          
+                          |--[31m15.83%[m--_dl_relocate_object
+                          |          
+                           --[32m3.26%[m--0xffffffffa9000b80
+
+  [31m  19.10%[m     0.00%  day06    [unknown]             [k] 0x0000000000000040
+            |
+            ---0x40
+               _dl_sysdep_start
+               dl_main
+               |          
+               |--[31m15.83%[m--_dl_relocate_object
+               |          
+                --[32m3.26%[m--0xffffffffa9000b80
+
+  [31m  19.10%[m     0.00%  day06    ld-linux-x86-64.so.2  [.] dl_main
+            |
+            ---dl_main
+               |          
+               |--[31m15.83%[m--_dl_relocate_object
+               |          
+                --[32m3.26%[m--0xffffffffa9000b80
+
+  [31m  15.83%[m  [31m  15.83%[m  day06    ld-linux-x86-64.so.2  [.] _dl_relocate_object
+            |
+            ---0x40
+               _dl_sysdep_start
+               dl_main
+               _dl_relocate_object
+
+  [31m  11.67%[m     0.00%  day06    [unknown]             [.] 0x00000000000fa9c8
+            |
+            ---0xfa9c8
+               0x7f223598a260
+               _dl_lookup_symbol_x
+
+  [31m  11.67%[m     0.00%  day06    libc++.so.1.0         [.] 0x00007f223598a260
+            |
+            ---0x7f223598a260
+               _dl_lookup_symbol_x
+
+  [31m   8.21%[m  [31m   8.21%[m  day06    ld-linux-x86-64.so.2  [.] strcmp
+            |
+            ---0x63636762696c0036
+               strcmp
+
+  [31m   8.21%[m     0.00%  day06    [unknown]             [.] 0x63636762696c0036
+            |
+            ---0x63636762696c0036
+               strcmp
+
+  [31m   6.77%[m     0.00%  day06    [unknown]             [.] 0xffffffffa9000ba2
+            |
+            ---0xffffffffa9000ba2
+               |          
+                --[31m6.39%[m--0xffffffffa8f2e60d
+                          0xffffffffa80e0f7f
+                          0xffffffffa82c1196
+                          0xffffffffa82aded5
+
+  [31m   6.39%[m  [31m   6.39%[m  day06    [unknown]             [k] 0xffffffffa82aded5
+            |
+            ---0x756e696c2d34365f
+               memmove
+               0xffffffffa9000ba2
+               0xffffffffa8f2e60d
+               0xffffffffa80e0f7f
+               0xffffffffa82c1196
+               0xffffffffa82aded5
+
+  [31m   6.39%[m     0.00%  day06    [unknown]             [k] 0x756e696c2d34365f
+            |
+            ---0x756e696c2d34365f
+               memmove
+               0xffffffffa9000ba2
+               0xffffffffa8f2e60d
+               0xffffffffa80e0f7f
+               0xffffffffa82c1196
+               0xffffffffa82aded5
+
+  [31m   6.39%[m     0.00%  day06    ld-linux-x86-64.so.2  [.] memmove
+            |
+            ---memmove
+               0xffffffffa9000ba2
+               0xffffffffa8f2e60d
+               0xffffffffa80e0f7f
+               0xffffffffa82c1196
+               0xffffffffa82aded5
+
+  [31m   6.39%[m     0.00%  day06    [unknown]             [.] 0xffffffffa8f2e60d
+            |
+            ---0xffffffffa8f2e60d
+               0xffffffffa80e0f7f
+               0xffffffffa82c1196
+               0xffffffffa82aded5
+
+  [31m   6.39%[m     0.00%  day06    [unknown]             [.] 0xffffffffa80e0f7f
+            |
+            ---0xffffffffa80e0f7f
+               0xffffffffa82c1196
+               0xffffffffa82aded5
+
+  [31m   6.39%[m     0.00%  day06    [unknown]             [.] 0xffffffffa82c1196
+            |
+            ---0xffffffffa82c1196
+               0xffffffffa82aded5
+
+  [32m   3.28%[m  [32m   3.28%[m  day06    [unknown]             [k] 0xffffffffa9000b80
+            |          
+             --[32m3.26%[m--0x40
+                       _dl_sysdep_start
+                       dl_main
+                       0xffffffffa9000b80
+
+  [32m   1.23%[m  [32m   1.23%[m  day06    ld-linux-x86-64.so.2  [.] init_cpu_features.constprop.0
+            |
+            ---init_cpu_features.constprop.0
+
+     0.38%     0.38%  day06    [unknown]             [k] 0xffffffffa8f2e5c1
+     0.21%     0.20%  day06    ld-linux-x86-64.so.2  [.] _dl_start
+     0.21%     0.00%  day06    ld-linux-x86-64.so.2  [.] _dl_start_user
+     0.00%     0.00%  day06    ld-linux-x86-64.so.2  [.] _start
+
+
+#
+# (Tip: Customize output of perf script with: perf script -F event,ip,sym)
+#

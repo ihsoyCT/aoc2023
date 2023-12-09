@@ -4,7 +4,6 @@
 #include <format>
 #include <fstream>
 #include <iostream>
-#include <iterator>
 #include <numeric>
 #include <ranges>
 #include <utility>
@@ -21,6 +20,7 @@ auto read_file(const std::string& file_path)
     }
     return output;
 }
+
 struct race
 {
     int64_t time;
@@ -35,7 +35,7 @@ auto parse_input(const std::vector<std::string>& input)
         std::from_chars(element.data(), element.data() + element.size(), value);
         return value;
     };
-    auto to_race = [](const std::pair<long, long>& pair) { return race(pair.first, pair.second); };
+    auto to_race = [](const std::pair<int64_t, int64_t>& pair) { return race(pair.first, pair.second); };
 
     auto parser =
         std::views::split(' ') | std::views::filter(isEmpty) | std::views::drop(1) | std::views::transform(to_number);
@@ -63,37 +63,20 @@ auto parse_input(const std::vector<std::string>& input)
 
 
 auto calculate_winning_race_times(const race& race)
-{
-    int64_t current_time{ 0 };
-    int64_t winning_count{};
-    while (current_time < race.time) {
-        int64_t time_left = race.time - current_time;
-        if (time_left * current_time > race.distance) {
-            ++winning_count;
-        }
-        ++current_time;
-    }
-    return winning_count;
+{    
+    return 1/2 * (race.time - std::sqrt(std::pow(race.time,2) - 4 * race.distance));
 }
 
 auto solution(const std::vector<std::string>& input)
 {
-    (void)input;
     auto races = parse_input(input);
-    auto& races_part1 = races.first;
-    auto& race_part2 = races.second;
 
-    std::vector<int64_t> possible_times;
-    possible_times.reserve(races_part1.size());
-    for (const auto& race : races_part1) {
-        possible_times.push_back(calculate_winning_race_times(race));
+    int64_t part1 {1};
+    for (const auto& race : races.first) {
+        part1 *= calculate_winning_race_times(race);
     }
-    auto part1 =
-        std::accumulate(possible_times.begin(), possible_times.end(), 1LL, [](int64_t sum, const auto& race_times) {
-            return sum * race_times;
-        });
 
-    int64_t part2 = calculate_winning_race_times(race_part2);
+    int64_t part2 = calculate_winning_race_times(races.second);
     return std::make_pair(part1, part2);
 }
 
@@ -101,7 +84,7 @@ auto solution(const std::vector<std::string>& input)
 
 int main()
 {
-    using time_scale = std::chrono::milliseconds;
+    using time_scale = std::chrono::microseconds;
 
     auto start = std::chrono::high_resolution_clock::now();
     const auto input = day06::read_file(INPUT_DIR "day06.txt");

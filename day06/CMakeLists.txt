@@ -4,4 +4,4 @@ find_package(Threads REQUIRED)
 
 target_link_libraries(day06 Threads::Threads)
 
-set_project_warnings(day06)
+add_executable(day062 main2.cpp)

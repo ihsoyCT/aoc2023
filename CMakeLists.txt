@@ -24,6 +24,13 @@ CPMAddPackage(
   GIT_TAG "v1.1.3"
 )
 
+CPMAddPackage(
+  NAME Boost
+  VERSION 1.83.0
+  GITHUB_REPOSITORY "boostorg/boost"
+  GIT_TAG "boost-1.83.0"
+)
+
 set(INPUT_DIR "\"${CMAKE_SOURCE_DIR}/inputs/\"")
 add_compile_definitions(INPUT_DIR=${INPUT_DIR})
 
@@ -33,3 +40,6 @@ add_subdirectory(day03)
 add_subdirectory(day04)
 add_subdirectory(day05)
 add_subdirectory(day06)
+add_subdirectory(day07)
+add_subdirectory(day08)
+add_subdirectory(day09)
