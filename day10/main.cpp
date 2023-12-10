@@ -111,11 +111,9 @@ auto solution(const auto& input)
             auto next_moves = get_possible_next_moves(current.first, current.second, maze);
             for (auto& move : next_moves) {
                 bool is_valid = false;
-                for (auto& move : next_moves) {
-                    auto back_move = get_possible_next_moves(move.first, move.second, maze);
-                    for (auto& back : back_move) {
-                        if (back.first == current.first && back.second == current.second) is_valid = true;
-                    }
+                auto back_move = get_possible_next_moves(move.first, move.second, maze);
+                for (auto& back : back_move) {
+                    if (back.first == current.first && back.second == current.second) is_valid = true;
                 }
                 if (!is_valid) continue;
                 if (distance_map[move.first, move.second] == -1) {
