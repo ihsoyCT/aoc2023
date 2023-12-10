@@ -103,7 +103,7 @@ auto solution(const std::vector<std::string>& input)
     std::vector<std::thread> threads;
     threads.reserve(seeds2.size());
     for (const auto& seed2 : seeds2) {
-        //threads.emplace_back([&]() {
+        threads.emplace_back([&]() {
             auto seed2n = seed2.start;
             while (seed2n < seed2.start + seed2.length) {
                 auto seed = seed2n;
@@ -114,7 +114,7 @@ auto solution(const std::vector<std::string>& input)
                 ++seed2n;
             }
             std::cout << std::format("seed_range: [{},{}] -> Current min: {}\n",seed2.start, seed2.length, min_part2.load());
-        //});
+        });
     }
 
     for (auto& thread : threads) {

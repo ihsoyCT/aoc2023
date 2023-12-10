@@ -48,10 +48,9 @@ auto solution(const std::vector<std::string>& input)
             auto check_if_zero = lines.back() | std::views::filter([](auto num) { return num != 0; });
             if (check_if_zero.begin() == check_if_zero.end()) break;
 
-            auto next_line = to_deque(lines.back() | std::views::slide(2) | std::views::transform([](auto iter) {
+            lines.push_back(to_deque(lines.back() | std::views::slide(2) | std::views::transform([](auto iter) {
                 return *std::next(iter.begin()) - *iter.begin();
-            }));
-            lines.push_back(next_line);
+            })));
         }
 
         for (size_t end = lines.size() - 1; end > 0; --end) {

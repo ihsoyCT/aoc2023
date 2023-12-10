@@ -5,5 +5,6 @@ set(CMAKE_EXE_LINKER_FLAGS "")
 
 find_package(Threads REQUIRED)
 
-target_link_libraries(day09 scn::scn-header-only)
+target_link_libraries(day09)
+set_project_warnings(day09)
 
