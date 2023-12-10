@@ -110,6 +110,14 @@ auto solution(const auto& input)
             distance_map[current.first, current.second] = previous_distance + 1;
             auto next_moves = get_possible_next_moves(current.first, current.second, maze);
             for (auto& move : next_moves) {
+                bool is_valid = false;
+                for (auto& move : next_moves) {
+                    auto back_move = get_possible_next_moves(move.first, move.second, maze);
+                    for (auto& back : back_move) {
+                        if (back.first == current.first && back.second == current.second) is_valid = true;
+                    }
+                }
+                if (!is_valid) continue;
                 if (distance_map[move.first, move.second] == -1) {
                     parent_node[move] = current;
                     queue.emplace(distance_map[current.first, current.second], move);
@@ -133,8 +141,8 @@ auto solution(const auto& input)
     maze[start.first, start.second] = '|';
 
     // clean map of pipes not part of path
-    for(size_t j{}; j < data.size(); ++j) {
-        if(nodes[j] == -1) data[j] = '.';
+    for (size_t j{}; j < data.size(); ++j) {
+        if (nodes[j] == -1) data[j] = '.';
     }
 
     for (std::size_t row = 0; row != node_map.extent(0); row++) {
@@ -143,7 +151,7 @@ auto solution(const auto& input)
             char current = maze[row, col];
             if (current == 'F' || current == 'L') {
                 char pipe_start = current;
-                while(current != '7' && current != 'J') {
+                while (current != '7' && current != 'J') {
                     col++;
                     current = maze[row, col];
                 }
