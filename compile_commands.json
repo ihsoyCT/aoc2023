@@ -2149,7 +2149,7 @@
 },
 {
   "directory": "/home/ihsoy/adventofcode/build/Release",
-  "command": "/usr/bin/clang++-17 -DINPUT_DIR=\\\"/home/ihsoy/adventofcode/inputs/\\\"  -stdlib=libc++ -fexperimental-library -march=native -O3 -DNDEBUG -std=c++23 -fcolor-diagnostics @day12/CMakeFiles/day12.dir/main.cpp.o.modmap -o day12/CMakeFiles/day12.dir/main.cpp.o -c /home/ihsoy/adventofcode/day12/main.cpp",
+  "command": "/usr/bin/clang++-17 -DINPUT_DIR=\\\"/home/ihsoy/adventofcode/inputs/\\\"  -stdlib=libc++ -fexperimental-library -march=native -O3 -DNDEBUG -std=c++23 -fcolor-diagnostics -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Werror @day12/CMakeFiles/day12.dir/main.cpp.o.modmap -o day12/CMakeFiles/day12.dir/main.cpp.o -c /home/ihsoy/adventofcode/day12/main.cpp",
   "file": "/home/ihsoy/adventofcode/day12/main.cpp",
   "output": "day12/CMakeFiles/day12.dir/main.cpp.o"
 }

@@ -3,7 +3,6 @@
 #include <format>
 #include <fstream>
 #include <iostream>
-#include <mdspan>
 #include <utility>
 #include <vector>
 #include <ranges>
@@ -34,7 +33,7 @@ auto read_file(const std::string& file_path)
 size_t count_options(std::span<size_t> hints, std::string_view data, std::map<std::pair<size_t, size_t>, size_t>& cache) {
     if(hints.empty()) return 1;
     if(data.empty()) return 0;
-    
+
     if(const auto it = cache.find(std::make_pair(hints.size(), data.size()));
         it != cache.end()) {
         return it->second;
