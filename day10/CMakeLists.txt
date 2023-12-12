@@ -1,5 +1,4 @@
 add_executable(day10 main.cpp)
 
-target_link_libraries(day10)
-set_project_warnings(day10)
+target_link_libraries(day10 Boost::unordered)
 

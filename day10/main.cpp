@@ -1,3 +1,5 @@
+#include "boost/unordered/unordered_flat_map_fwd.hpp"
+#include <boost/unordered/unordered_flat_map.hpp>
 #include <cassert>
 #include <chrono>
 #include <cstdint>
@@ -48,10 +50,11 @@ auto get_possible_next_moves(size_t row, size_t col, const auto& maze) -> std::v
     char current_symbol = maze[row, col];
     switch (current_symbol) {
     case 'S':
-        return std::vector{ std::make_pair(row, col - 1),
-            std::make_pair(row, col + 1),
+        return std::vector{ 
             std::make_pair(row - 1, col),
-            std::make_pair(row + 1, col) };
+            std::make_pair(row + 1, col),
+            std::make_pair(row, col - 1),
+            std::make_pair(row, col + 1) };
         break;
     case '|':
         return std::vector{ std::make_pair(row - 1, col), std::make_pair(row + 1, col) };
@@ -71,6 +74,8 @@ auto get_possible_next_moves(size_t row, size_t col, const auto& maze) -> std::v
     case 'F':
         return std::vector{ std::make_pair(row, col + 1), std::make_pair(row + 1, col) };
         break;
+    default:
+        std::unreachable();
     }
 
     return {};
@@ -97,7 +102,7 @@ auto solution(const auto& input)
     std::stack<std::pair<int64_t, decltype(start)>> queue;
     queue.emplace(0, start);
 
-    std::map<decltype(start), decltype(start)> parent_node;
+    boost::unordered_flat_map<decltype(start), decltype(start)> parent_node;
 
     decltype(start) last_node;
 
@@ -113,9 +118,11 @@ auto solution(const auto& input)
                 bool is_valid = false;
                 auto back_move = get_possible_next_moves(move.first, move.second, maze);
                 for (auto& back : back_move) {
-                    if (back.first == current.first && back.second == current.second) is_valid = true;
+                    is_valid |= (back.first == current.first && back.second == current.second);
                 }
-                if (!is_valid) continue;
+                if (!is_valid) {
+                    continue;
+                }
                 if (distance_map[move.first, move.second] == -1) {
                     parent_node[move] = current;
                     queue.emplace(distance_map[current.first, current.second], move);
@@ -158,7 +165,7 @@ auto solution(const auto& input)
                 }
             } else if (maze[row, col] == '|') {
                 ++pipe_breaks;
-            } else if (pipe_breaks % 2 == 1 && node_map[row, col] == -1) {
+            } else if (pipe_breaks % 2 == 1) {
                 part2++;
             }
         }
@@ -171,7 +178,7 @@ auto solution(const auto& input)
 
 int main()
 {
-    using time_scale = std::chrono::microseconds;
+    using time_scale = std::chrono::milliseconds;
 
     auto start = std::chrono::high_resolution_clock::now();
     const auto input = day10::read_file(INPUT_DIR "day10.txt");
