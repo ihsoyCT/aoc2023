@@ -2152,5 +2152,29 @@
   "command": "/usr/bin/clang++-17 -DINPUT_DIR=\\\"/home/ihsoy/adventofcode/inputs/\\\"  -stdlib=libc++ -fexperimental-library -march=native -O3 -DNDEBUG -std=c++23 -fcolor-diagnostics -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Werror @day12/CMakeFiles/day12.dir/main.cpp.o.modmap -o day12/CMakeFiles/day12.dir/main.cpp.o -c /home/ihsoy/adventofcode/day12/main.cpp",
   "file": "/home/ihsoy/adventofcode/day12/main.cpp",
   "output": "day12/CMakeFiles/day12.dir/main.cpp.o"
+},
+{
+  "directory": "/home/ihsoy/adventofcode/build/Release",
+  "command": "/usr/bin/clang++-17 -DINPUT_DIR=\\\"/home/ihsoy/adventofcode/inputs/\\\"  -stdlib=libc++ -fexperimental-library -march=native -O3 -DNDEBUG -std=c++23 -fcolor-diagnostics -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Werror @day13/CMakeFiles/day13.dir/main.cpp.o.modmap -o day13/CMakeFiles/day13.dir/main.cpp.o -c /home/ihsoy/adventofcode/day13/main.cpp",
+  "file": "/home/ihsoy/adventofcode/day13/main.cpp",
+  "output": "day13/CMakeFiles/day13.dir/main.cpp.o"
+},
+{
+  "directory": "/home/ihsoy/adventofcode/build/Release",
+  "command": "/usr/bin/clang++-17 -DINPUT_DIR=\\\"/home/ihsoy/adventofcode/inputs/\\\"  -stdlib=libc++ -fexperimental-library -march=native -O3 -DNDEBUG -std=c++23 -fcolor-diagnostics @day14/CMakeFiles/day14.dir/main.cpp.o.modmap -o day14/CMakeFiles/day14.dir/main.cpp.o -c /home/ihsoy/adventofcode/day14/main.cpp",
+  "file": "/home/ihsoy/adventofcode/day14/main.cpp",
+  "output": "day14/CMakeFiles/day14.dir/main.cpp.o"
+},
+{
+  "directory": "/home/ihsoy/adventofcode/build/Release",
+  "command": "/usr/bin/clang++-17 -DINPUT_DIR=\\\"/home/ihsoy/adventofcode/inputs/\\\"  -stdlib=libc++ -fexperimental-library -march=native -O3 -DNDEBUG -std=c++23 -fcolor-diagnostics -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Werror @day15/CMakeFiles/day15.dir/main.cpp.o.modmap -o day15/CMakeFiles/day15.dir/main.cpp.o -c /home/ihsoy/adventofcode/day15/main.cpp",
+  "file": "/home/ihsoy/adventofcode/day15/main.cpp",
+  "output": "day15/CMakeFiles/day15.dir/main.cpp.o"
+},
+{
+  "directory": "/home/ihsoy/adventofcode/build/Release",
+  "command": "/usr/bin/clang++-17 -DINPUT_DIR=\\\"/home/ihsoy/adventofcode/inputs/\\\" -I/home/ihsoy/adventofcode/.cache/CPM/boost/b1dc728a9777bf721194e66f339a6ec68a01285a/libs/unordered/include -I/home/ihsoy/adventofcode/.cache/CPM/boost/b1dc728a9777bf721194e66f339a6ec68a01285a/libs/assert/include -I/home/ihsoy/adventofcode/.cache/CPM/boost/b1dc728a9777bf721194e66f339a6ec68a01285a/libs/config/include -I/home/ihsoy/adventofcode/.cache/CPM/boost/b1dc728a9777bf721194e66f339a6ec68a01285a/libs/container_hash/include -I/home/ihsoy/adventofcode/.cache/CPM/boost/b1dc728a9777bf721194e66f339a6ec68a01285a/libs/describe/include -I/home/ihsoy/adventofcode/.cache/CPM/boost/b1dc728a9777bf721194e66f339a6ec68a01285a/libs/mp11/include -I/home/ihsoy/adventofcode/.cache/CPM/boost/b1dc728a9777bf721194e66f339a6ec68a01285a/libs/core/include -I/home/ihsoy/adventofcode/.cache/CPM/boost/b1dc728a9777bf721194e66f339a6ec68a01285a/libs/static_assert/include -I/home/ihsoy/adventofcode/.cache/CPM/boost/b1dc728a9777bf721194e66f339a6ec68a01285a/libs/throw_exception/include -I/home/ihsoy/adventofcode/.cache/CPM/boost/b1dc728a9777bf721194e66f339a6ec68a01285a/libs/move/include -I/home/ihsoy/adventofcode/.cache/CPM/boost/b1dc728a9777bf721194e66f339a6ec68a01285a/libs/predef/include -I/home/ihsoy/adventofcode/.cache/CPM/boost/b1dc728a9777bf721194e66f339a6ec68a01285a/libs/preprocessor/include -I/home/ihsoy/adventofcode/.cache/CPM/boost/b1dc728a9777bf721194e66f339a6ec68a01285a/libs/tuple/include -I/home/ihsoy/adventofcode/.cache/CPM/boost/b1dc728a9777bf721194e66f339a6ec68a01285a/libs/type_traits/include  -stdlib=libc++ -fexperimental-library -march=native -O3 -DNDEBUG -std=c++23 -fcolor-diagnostics @day16/CMakeFiles/day16.dir/main.cpp.o.modmap -o day16/CMakeFiles/day16.dir/main.cpp.o -c /home/ihsoy/adventofcode/day16/main.cpp",
+  "file": "/home/ihsoy/adventofcode/day16/main.cpp",
+  "output": "day16/CMakeFiles/day16.dir/main.cpp.o"
 }
 ]
